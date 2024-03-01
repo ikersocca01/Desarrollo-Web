@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar formulario</title>
+    <script>
+        function valida_envia(){
+            if(document.fvalida.nombre.value.length==0){
+                alert("Tiene que escribir su nombre!")
+                document.fvalida.nombre.focus()
+                return 0;
+            }
+            if(document.fvalida.edad.value==""){
+                alert("Tiene que introducir un número entero en su edad.")
+                document.fvalida.edad.focus()
+                return 0;
+            }
+            else{
+                if(document.fvalida.edad.value<18){
+                    alert("Debe ser mayor de 18 años!")
+                    document.fvalida.edad.focus()
+                    return 0;
+                }
+            }
+
+            if(document.fvalida.interes.selectedIndex==0){
+                alert("Debe seleccionar un motivo de contacto")
+                document.fvalida.interes.focus()
+                return 0;
+
+                //el formulario se envia
+                alert("Muchas gracias por enviar el formulario");
+                document.fvalida.submit();
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="fvalida">
+    <table>
+        <tr>
+            <td>Nombre:</td>
+            <td><INPUT TYPE="Text" VALUE="nombre" SIZE="20" MAXLENGTH="20" NAME="nombre"></td>
+        </tr>
+        <tr>
+            <td>Edad:</td>
+            <td><input type="number" name="edad" min="10" max="30"></td>
+        </tr>
+        <tr>
+            <td>Interés:</td>
+            <td colspan="2"><select name="interes" id="elección">
+                <option value="Elegir">Elegir</option>
+                <option value="Basketball">Basketball</option>
+                <option value="Soccer">Soccer</option>
+            </select></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td colspan="2" align="center"><input type="button" value="enviar" onclick="valida_envia()"></form></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

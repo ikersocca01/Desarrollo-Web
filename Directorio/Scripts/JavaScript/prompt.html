@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prompt</title>
+</head>
+<body>
+    
+    <!--Este script nos permite solicitar un correo electronico y tambien 
+    puede redirigir a diferentes paginas.-->
+
+    <script>
+        var email=prompt("Correo electronico","algo@correo.com")
+        var correo = email
+        if(email==undefined || email == "algo@correo.com")
+        location.href = "prompt.html";
+
+        //window.alert("Lo sentimos pero no puede completarse tu suscripcion")
+    else
+    window.alert("Muy bien tu correo"+email+"Ha sido dado de alta correctamente")
+    </script>
+</body>
+</html>

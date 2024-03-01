@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios ejemplo 1</h1>
+    <form>
+        <FORM>
+            User:<INPUT TYPE=”Text” VALUE="Prueba" SIZE=”30” MAXLENGTH=”10” NAME="Campo_01"> <br>
+            Password:<INPUT VALUE="Prueba" TYPE= ” PASSWORD ” NAME="Campo_02"> <br>
+            <INPUT VALUE="Prueba" TYPE= ” HIDDEN ” NAME="Campo_03"> <br><br>
+            Tipo:
+            <INPUT TYPE= ” RADIO ” NAME="tipo" VALUE="1" CHECKED> 1 &nbsp; &nbsp; &nbsp;
+            <INPUT TYPE= ” RADIO ” NAME="tipo" VALUE="2" > 2 &nbsp; &nbsp; &nbsp; &nbsp;
+            <INPUT TYPE= ” RADIO ” NAME="tipo" VALUE="3" > 3 <br>
+            Clase:
+            <INPUT TYPE="CHECKBOX" NAME="ClaseA" VALUE="A"> A &nbsp; &nbsp; &nbsp; &nbsp;
+            <INPUT TYPE="CHECKBOX" NAME="ClaseB" VALUE="B"> B <br><br>
+            <INPUT TYPE="RESET" NAME="Reset" VALUE="Reset" >
+            <INPUT TYPE="SUBMIT" NAME="Go“ VALUE=“Ir" >
+            </FORM>
+
+            <br>
+            <br>
+            <br>
+
+            <table border="0">  
+                <td width="15%">User:</td>
+                <td colspan="4"><INPUT TYPE=”Text” VALUE="Prueba" SIZE=”50” MAXLENGTH=”20” NAME="Campo_01">
+                </td>
+                <tr>
+                    <td width="15%">Password:</td>
+                    <td colspan="4"><INPUT VALUE="Prueba" TYPE= ” PASSWORD ” NAME="Campo_02">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4"><br></td>
+                </tr>
+                <tr>
+                    <td width="20%">tipo:</td>
+
+                    <td><INPUT TYPE= "RADIO" NAME="tipo" VALUE="1" CHECKED> 1 &nbsp; &nbsp; &nbsp;
+                    </td>
+
+                    <td><INPUT TYPE= "RADIO" NAME="tipo" VALUE="2" > 2 &nbsp; &nbsp; &nbsp; &nbsp;
+                    </td>
+
+                    <td><INPUT TYPE= "RADIO" NAME="tipo" VALUE="3" > 3
+                    </td>
+                </tr>
+                    <tr>
+                        <td width="20%">Clase:</td>
+                        <td><INPUT TYPE="CHECKBOX" NAME="ClaseA" VALUE="A"> A &nbsp; &nbsp; &nbsp; &nbsp;
+                        </td>
+                        <td colspan="2"><INPUT TYPE="CHECKBOX" NAME="ClaseB" VALUE="B"> B
+                        </td>
+                    </tr>
+                            <tr>
+                                <td width="20%">Color:</td>
+                                <td colspan="2"><input type="color" name="color">Selecciona un color</td><br>
+
+                                <td width="40%">Fecha:</td>
+                                <td colspan="2"><input type="date" name="Fecha"> Selecciona una fecha</td><br>
+
+                                <td width="40%">Hora:</td>
+                                <td colspan="2"><input type="datetime" name="hora">Selecciona la hora</td><br>
+                            </tr>
+                        <tr>
+                            <td width="100%" colspan="4">
+                                <INPUT TYPE="RESET" NAME="Reset" VALUE="Reset" >
+                                <INPUT TYPE="SUBMIT" NAME="Go“ VALUE=“Ir" >
+                            </td>
+                        </tr>
+                    </table>
+    </form>
+    <br><br>
+    <form>
+        Mes: <input type="month" name = "Mes"> muestra un calendario (Chrome) y devuelve mes y año de la fecha seleccionada <br>
+        <br>
+        Edad: <input type="number" name="Edad" min="18" max="30"> Define un campo numérico con restricciones si es necesario <br>
+        <br>
+        email: <input type="email" name="Correo"> cadena que contenga @ <br>
+        <br>
+        url: <input type="url" name="direc"> Espera cadena http:www. <br>
+        <br>
+        semana: <input type="week" name="Semana"> Muestra un calendario(Chrome) y manda la semana y el año de la fecha dada <br>
+    </form>
+<br><br>
+
+<table>
+    <tr><td>Comentarios</td>
+    <td colspan="4"><textarea name="Comentarios" cols="30" rows="15"></textarea></td>
+    </tr>
+</table>
+
+<form>
+    Elija color: 
+    <select name="color">
+    <option> Verde</option>
+    <option> Negro</option>
+    <option selected> Rojo</option>
+    <option> Azul</option>
+    </select>
+    <br>
+    <input type="submit" value="enviar elección">
+</form>
+</body>
+</html>
